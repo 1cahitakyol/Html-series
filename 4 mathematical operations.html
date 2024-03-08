@@ -1,11 +1,56 @@
 <html>
 	<head>
+		<style>
 
+			.button{
+				margin: 10px;
+			}
+			.button:hover{
+				border-radius: 50%;
+			}
+			</style>
 	</head>
 	<body>
-		<button onclick="hesap()">Topla</button>
-		<button onclick="hesap()">Çıkar</button>
-		<button onclick="hesap()">Çarp</button>
-		<button onclick="hesap()">Böl</button>
+		<input id="number1" type="number"/>
+		<input id="number2" type="number"/>
+		<button onclick="hesap('+')" class="button">Topla</button>
+		<button onclick="hesap('-')" class="button">Çıkar</button>
+		<button onclick="hesap('*')" class="button">Çarp</button>
+		<button onclick="hesap('/')" class="button">Böl</button>
+		
+
+		<script>
+			function hesap(x){
+				var number1=document.getElementById("number1").value
+				var number2=document.getElementById("number2").value
+				var sonuc="";
+		
+				/*alert(number1)
+				alert(number2)
+				alert(sonuc);*/
+				switch(x) {
+					case '+':
+						sonuc=Number(number1)+Number(number2)
+						alert(sonuc);
+						break;
+					case "-":
+						sonuc=number1-number2
+						alert(sonuc);
+						break;
+					case '*':
+						sonuc=number1*number2
+						alert(sonuc);
+						break;
+					case "/":
+						sonuc=number1/number2
+						alert(sonuc);
+						break;
+				}
+
+
+
+				document.getElementById("sonuc").innerHTML=sonuc;
+			}
+		</script>
 	</body>
 </html>
