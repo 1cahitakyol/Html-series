@@ -1,7 +1,6 @@
 <html>
 	<head>
 		<style>
-
 			.button{
 				margin: 10px;
 			}
@@ -17,17 +16,11 @@
 		<button onclick="hesap('-')" class="button">Çıkar</button>
 		<button onclick="hesap('*')" class="button">Çarp</button>
 		<button onclick="hesap('/')" class="button">Böl</button>
-		
-
 		<script>
 			function hesap(x){
 				var number1=document.getElementById("number1").value
 				var number2=document.getElementById("number2").value
 				var sonuc="";
-		
-				/*alert(number1)
-				alert(number2)
-				alert(sonuc);*/
 				switch(x) {
 					case '+':
 						sonuc=Number(number1)+Number(number2)
@@ -46,9 +39,6 @@
 						alert(sonuc);
 						break;
 				}
-
-
-
 				document.getElementById("sonuc").innerHTML=sonuc;
 			}
 		</script>
