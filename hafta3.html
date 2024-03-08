@@ -3,101 +3,142 @@
 		<title>Cahit</title>
 
 		<style>
-			body{
+			*{
 				padding: 0px;
 				margin: 0px;
 			}
 			.head.control{
+				justify-content: space-between;
+				margin: 0px;
+				padding: 20px;
+				background-color: rgb(60, 186, 38);
+				display: flex;
+				height: 55px;
+				flex-direction: row;
+				color: antiquewhite;
+				width: 100%;
+				position: fixed;
+				bottom: 0px;
+			}
+			.ppticket{
+				
+				justify-content: space-between;
+				
+				align-items: center;
 				margin: 0px;
 				padding: 0px;
-				background-color: red;
+				background-color: rgb(134, 129, 154);
 				display: flex;
-				height: 200px;
+				height: 75px; 
 				flex-direction: row;
-				justify-content: center;
-				align-items: center;
-				
+				color: antiquewhite;
+				width: 100%;
+
+
+
 			}
-
-		</style>
-	</head>
-	<body>
-		
-		<div 
-			class="head control"
-			>
-			<h1>
-				Türkiye'nin Tarihi ve Kültürel Zenginlikleri		
-			<br>
-			<br/>
-			
-			<img
-				 src="htmlindir.jpeg"
-				 height="75px"
-			 
-			 >
-			 <img 
-			 	src="htmindir.jpeg"
-				 height="75px"
-			 >
-			 <img
-				src="htindir.jpeg"
-			 	height="75px"
-			>
+			.logo{
+				border-radius: 50%;
+				display: flex;
+				flex-direction: row;
+			}
+			.header-title{
+				margin-bottom: 5px;
+				font-weight: bold;
+				display: flex;
+				flex-direction: row;
+			}
+			.header-content{
+				display: flex;
 				
 
+			}
+			.welcome{
+				height: 100px;
+				width: 100%;
+			}
+			.baslik{
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					padding: 20px;
+					
+			}
+			.blogpost{
+				margin: 10px;
+				height: 50px;
+				width: 200px;
+				border-radius: 10%;
+				background-color: wheat;
+				display: flex;
+				align-items: center;
+				flex-direction: row;
+			}
+			.info{
+				flex-direction: column;
+				display: flex;
+				align-items: center;
+			}
+			.write{
+				margin-right: 20px;
+			}
+			</style>
+	</head>
+	<body>	
+		<div class="head control">
+			<span>
+				Telif hakları @
+			</span>
+			
+			<span class="write">
+				Cahit AKYOL
+			</span>
+	 	</div>	
+		<div class="ppticket" >
+			<img src="PP.png"
+				height="75px"
+				width="75px"
+				class="logo"
+			/>
+			<div class="ppticket" >
+				<div>
+					<span class="header-title">
+						Cahit AKYOL
+					</span>
+					<span class="header-content">
+						Software Developer
+					</span>
+				</div>
+				<div>					
+					<a href="#">Anasafya</a>
+					<a href="#">HAkkımda</a>
+					<a href="#">İletişim</a>
+				</div>
+			</div>
+			
 
 		</div>
-		<div>
-			<p>
-
-				Türkiye, köklü tarihi ve zengin kültürel mirasıyla dikkat 
-				çeken bir ülkedir. Anadolu topraklarının binlerce yıllık
-				geçmişi, çeşitli medeniyetlerin izlerini taşır. 
-				Bu topraklar, Antik Yunan, Roma İmparatorluğu, Bizans ve
-				Osmanlı gibi büyük imparatorluklara ev sahipliği 
-				yapmıştır. Günümüz Türkiye'si, bu zengin tarihi 
-				mirasıyla dünya çapında önemli bir kültürel merkezdir.
-			</p>
-			<p>
-
-	Türkiye'nin coğrafi konumu, birçok medeniyetin kesişim noktasında
-	bulunmasını sağlamıştır. Bu da ülkenin kültürel çeşitliliğine büyük 
-	katkı sağlamıştır. <b> Türk, Kürt, Arap, Laz, Çerkes</b> ve diğer birçok etnik 
-	grup Türkiye'nin mozaiğini oluşturur. Ayrıca, İslam, Hristiyanlık ve
-	Musevilik gibi farklı dinlerin yanı sıra laik bir yapıya sahip olan
-	Türkiye, din ve kültürler arası hoşgörüyü simgeler.
-			</p>
-			<p>
-
-	Türkiye'nin tarihi ve kültürel zenginlikleri arasında muhteşem mimari
-	yapılar da bulunmaktadır. Ayasofya, Topkapı Sarayı, Kapadokya'daki peri
-	bacaları ve Efes Antik Kenti gibi yerler, ziyaretçilere binlerce yıllık
-	geçmişiyle büyüleyici bir yolculuk sunar. Ayrıca, geleneksel Türk mutfağı
-    da dünya genelinde büyük ilgi görür. Kebaplar, baklavalar, çörekler ve
-	daha pek çok lezzetli yemek, Türk mutfağının zenginliğini yansıtır.
-			</p>
-			<p>
-
-	Türkiye'nin tarihi ve kültürel zenginlikleri hakkında daha fazla bilgi 
-	edinmek isteyenler için seyahat etmek, tarihi ve turistik yerleri ziyaret
-	etmek veya yerel kültür etkinliklerine katılmak harika bir deneyim olabilir.
-	Bu ülke, her biri kendine özgü olan birçok hikayeyi ve anlatıyı barındırır.
-			</p>
-Bizi Değerlendirin 
-<select name="Begenmedurum" id="durum">
-	<option value="6">Seçiniz</option>
-	<option value="5">5</option>
-	<option value="4">4</option>
-	<option value="3">3</option>
-	<option value="2">2</option>
-	<option value="1">1</option>
-</select>
-<br/>
-<br/>
-<br/>
- <a href="https://chat.openai.com/">Kaynakça</a>
+	 	
+		<div class="welcome">
+			<img src="welcom.jpeg" class="welcome">
 		</div>
+		<div class="blogpost">
+			<img  src="PP.png"
+			class="logo"
+				height="50px"
+				width="50px"				
+			>
+			<div class="info">
+
+				<span >
+					Cahit AKYOL
+				</span>
+				<span>
+					Developer
+				</span>
+			</div>
+		</div >
 		
+		</div>
 	</body>
 </html>
